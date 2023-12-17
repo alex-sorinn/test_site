@@ -11,6 +11,38 @@ body {
 .lotto {
   padding: 30px;
 }
-.lotto span {
-  padding: 0 10px;
+.lotto button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  background-color: grey;
+  border: none;
+}
+.lotto button:hover {
+  background-color: black;
+}
+.lotto_num {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: copy;
+  position: relative;
+  user-select: none;
+}
+.lotto_num_active:active {
+  color: green;
+}
+.clipboard {
+  position: absolute;
+  display: inline;
+}
+.lotto_num span {
+  width: 50px;
+}
+.clipOFF {
+  visibility: hidden;
+}
+.clipON {
+  visibility: visible;
 }
