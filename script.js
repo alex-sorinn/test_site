@@ -28,16 +28,20 @@ function lotto() {
   };
 
 	
-	function writeHTML(loto_type) {
+	function writeHTML(lotto_type) {
 		let numbers; 
-		if(loto_type == p649) {
+		if(lotto_type == p649) {
 			numbers = random(6, 1, 49);
 		} else {
 			numbers = random(5, 1, 40);
 		};
 
 		for (let e = 0; e < numbers.length; e++) {
-			loto_type.children[e].innerHTML = numbers[e];
+            let num_to_string = numbers[e].toString();
+            if (num_to_string.length < 2) {
+                num_to_string = "0" + num_to_string;
+            }
+			lotto_type.children[e].innerHTML = num_to_string;
 		};
 	};
 

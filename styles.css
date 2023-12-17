@@ -8,3 +8,9 @@ body {
   text-align: center;
   font-size: 25px;
 }
+.lotto {
+  padding: 30px;
+}
+.lotto span {
+  padding: 0 10px;
+}
